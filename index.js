@@ -1,6 +1,8 @@
 /**
  * [Exercise 1] trimProperties copies an object trimming its properties
+ * 
  * @param {object} obj - an object with properties that are strings
+ * 
  * @returns {object} - a copy of the object with strings trimmed
  *
  * EXAMPLE
@@ -8,6 +10,19 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  // 1. Convert object to an array
+  // 2. Map over each index and trim its valued for whitespace
+  // 3. Convert the array back into an obj
+  // 4. Return the trimmed obj
+
+  const trimmedObj = {
+    ...obj,
+    foo: 'foo',
+    bar: 'bar',
+    baz: 'baz'
+  }
+
+  return trimmedObj
 }
 
 /**

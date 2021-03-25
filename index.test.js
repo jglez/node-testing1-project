@@ -1,4 +1,4 @@
-const utils = require('./index')
+const utils = require('./index.js')
 
 describe('[Exercise 1] trimProperties', () => {
   it('[1] returns an object with the properties trimmed', () => {
@@ -6,6 +6,7 @@ describe('[Exercise 1] trimProperties', () => {
     const input = { foo: '  foo ', bar: 'bar ', baz: ' baz' }
     const expected = { foo: 'foo', bar: 'bar', baz: 'baz' }
     const actual = utils.trimProperties(input)
+    // expect(actual).toEqual(expected)
     expect(actual).toEqual(expected)
   })
   it('[2] returns a copy, leaving the original object intact', () => {
